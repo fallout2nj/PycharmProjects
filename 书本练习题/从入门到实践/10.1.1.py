@@ -1,5 +1,8 @@
-'''↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓读文件块↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓'''
 
+import json
+
+'''↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓读文件块↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓'''
+# # *************************包含文件pi_digits.txt
 # with open('pi_digits.txt') as file_object:
 #     contents = file_object.read()
 #     print(contents)
@@ -52,7 +55,8 @@
 # print(len(pi_string))
 
 
-# 圆周率里包含你的生日吗？
+# # 圆周率里包含你的生日吗？
+# # *********************包含文件pi_million_digits.txt
 # filename = 'pi_million_digits.txt'
 # with open(filename) as file_object:
 #     lines = file_object.readlines()
@@ -73,15 +77,47 @@
 
 
 '''↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓写文件块↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓'''
-
+# # **************************包含文件programming.txt
 # filename = 'programming.txt'
 # with open(filename, 'w') as file_object:
 #     file_object.write("I love programming.")  # 这里注意双引号是个小技巧，便于英文中的单引号的出现
 
 
-filename = 'programming.txt'
-with open(filename, 'a') as file_object:
-    file_object.write("I love programming too.\n")
-    file_object.write("I love creating new games.\n")  # 结尾处务必带上换行符，上面代码段因为没有所以和第二段连在一起了
+# filename = 'programming.txt'
+# with open(filename, 'a') as file_object:
+#     file_object.write("I love programming too.\n")
+#     file_object.write("I love creating new games.\n")  # 结尾处务必带上换行符，上面代码段因为没有所以和第二段连在一起了
 
 '''↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑写文件块↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑'''
+
+
+
+'''↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑读写json↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑'''
+# # ***********************包含文件numbers.json
+# numbers = [2, 3, 5, 7, 11, 13]
+# filename = 'numbers.json'
+# with open(filename, 'w') as f_obj:
+#     json.dump(numbers, f_obj)
+
+
+# filename = 'numbers.json'
+# with open(filename) as f_obj:
+#     numbers = json.load(f_obj)
+# print(numbers)
+
+
+
+
+# # **********************包含文件username.json
+# username = input("What is your name?")
+# filename = 'username.json'
+# with open(filename, 'w') as f_obj:
+#     json.dump(username, f_obj)
+#     print("We'll remember you when you come back," + username + "!")
+
+
+# filename = 'username.json'
+# with open(filename) as f_obj:
+#     username = json.load(f_obj)
+#     print(username)
+'''↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓读写json↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓'''
